@@ -1,0 +1,114 @@
+/* Importance Section Container */
+.importance-section {
+    padding: 4rem 2rem;
+    background-color: #111; /* Light background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 2rem 0;
+  }
+  
+  /* Lottie Animation Container */
+  .lottie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: float 3s ease-in-out infinite; /* Floating animation */
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Importance Text Section */
+  .importance-text {
+    padding: 1rem;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50; /* Dark blue */
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Section Description */
+  .section-description {
+    font-size: 1.2rem;
+    color: #34495e; /* Dark gray */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Benefits List */
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Benefit Item */
+  .benefit-item {
+    font-size: 1.1rem;
+    color: #34495e; /* Dark gray */
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    animation: slideIn 0.5s ease-in-out forwards; /* Slide-in animation */
+    opacity: 0;
+  }
+  
+  .benefit-item:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  .benefit-item:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  .benefit-item:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  .benefit-item:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Icon */
+  .icon {
+    font-size: 1.5rem;
+    margin-right: 0.8rem;
+    color: #3498db; /* Blue */
+  }
+  
+  /* Section Conclusion */
+  .section-conclusion {
+    font-size: 1.2rem;
+    color: #34495e; /* Dark gray */
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  }

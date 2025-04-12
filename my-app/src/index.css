@@ -1,0 +1,907 @@
+@import '@fontsource/unbounded/index.css';
+
+body {
+  font-family: 'Unbounded', sans-serif;
+  background-color: #000;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Feature Card */
+.feature-card {
+  background-color: #111 !important;
+  border: none !important;
+  box-shadow: 0 0 15px #318CE7 !important;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+.card-body h2{
+  text-align: left;
+  color:#ffffff;
+  font-family: "unbounded";
+}
+.card-body p{
+  text-align: left;
+  color:#ffffff;
+  font-family: "unbounded";
+}
+/* Editor Container */
+.editor-container {
+  font-family: 'Unbounded';
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.editor-container textarea{
+  font-family: 'Unbounded';
+}
+textarea {
+  font-family: 'Unbounded';
+  width: 100%;
+  height: 200px;
+  background-color: #222;
+  color: white;
+  border: 1px solid #318CE7;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: monospace;
+}
+
+/* Feedback Message */
+.feedback {
+  margin-top: 20px;
+  color: #318CE7;
+  font-size: 1.1rem;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #318CE7;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #00cccc;
+}
+
+/* Lottie Animation Container */
+.lottie-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.lottie-player {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Importance Text Section */
+.importance-text {
+  padding: 20px;
+  text-align: center;
+}
+
+.importance-text h2 {
+  font-weight: bold;
+  color: #318CE7;
+  margin-bottom: 10px;
+}
+
+.importance-text p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+.importance-text li{
+  text-align: left;
+  font-size: 1.1rem;
+  color: #cccccc;
+}
+/* Dialog Overlay */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Dialog Card */
+.dialog-card {
+  background-color: #111;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px #318CE7;
+  text-align: center;
+  max-width: 400px;
+  width: 90%; /* Responsive width */
+}
+
+.dialog-card h2 {
+  margin-bottom: 20px;
+  color: #318CE7;
+}
+
+.dialog-card p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+.dialog-card button {
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive Media Queries */
+
+/* Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+  .feature-card {
+    padding: 15px;
+  }
+
+  textarea {
+    height: 150px; /* Smaller textarea for mobile */
+  }
+
+  .importance-text h2 {
+    font-size: 1.5rem; /* Smaller heading for mobile */
+  }
+
+  .importance-text p {
+    font-size: 1rem; /* Smaller text for mobile */
+  }
+
+  .dialog-card {
+    padding: 15px; /* Smaller padding for mobile */
+  }
+
+  .dialog-card h2 {
+    font-size: 1.5rem; /* Smaller heading for mobile */
+  }
+
+  .dialog-card p {
+    font-size: 1rem; /* Smaller text for mobile */
+  }
+}
+
+/* Tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .feature-card {
+    padding: 20px;
+  }
+
+  textarea {
+    height: 180px; /* Medium textarea for tablets */
+  }
+
+  .importance-text h2 {
+    font-size: 1.75rem; /* Medium heading for tablets */
+  }
+
+  .importance-text p {
+    font-size: 1.1rem; /* Medium text for tablets */
+  }
+
+  .dialog-card {
+    padding: 20px; /* Medium padding for tablets */
+  }
+
+  .dialog-card h2 {
+    font-size: 1.75rem; /* Medium heading for tablets */
+  }
+
+  .dialog-card p {
+    font-size: 1.1rem; /* Medium text for tablets */
+  }
+}
+
+/* Desktops (1024px and above) */
+@media (min-width: 1024px) {
+  .feature-card {
+    padding: 25px;
+  }
+
+  textarea {
+    height: 200px; /* Larger textarea for desktops */
+  }
+
+  .importance-text h2 {
+    font-size: 2rem; /* Larger heading for desktops */
+  }
+
+  .importance-text p {
+    font-size: 1.2rem; /* Larger text for desktops */
+  }
+
+  .dialog-card {
+    padding: 25px; /* Larger padding for desktops */
+  }
+
+  .dialog-card h2 {
+    font-size: 2rem; /* Larger heading for desktops */
+  }
+
+  .dialog-card p {
+    font-size: 1.2rem; /* Larger text for desktops */
+  }
+}
+.footer {
+  background-color: rgb(0, 0, 0); /* Change footer color to gray */
+  color: white;
+  padding: 20px;
+  width: 100%; /* Make footer full width */
+  position: relative;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.footer-container {
+  width: 100%; /* Ensure container is full width */
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.footer-text {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.footer-social {
+  margin-top: 10px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: cyan;
+}
+/* Navbar Styles */
+.navbar {
+  background-color: #111 !important; /* Dark background */
+  border-bottom: 1px solid #318CE7; /* Accent border */
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  color: #318CE7 !important; /* Accent color for the brand */
+  font-family: 'Unbounded', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+  color: #00cccc !important; /* Hover effect */
+}
+
+/* Buttons in Navbar */
+.navbar .btn {
+  font-family: 'Unbounded', sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 8px 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Sign In Button */
+.navbar .btn-primary {
+  background-color: #318CE7; /* Accent color */
+  border: none;
+  color: #000; /* Dark text */
+}
+
+.navbar .btn-primary:hover {
+  background-color: #00cccc; /* Hover effect */
+  color: #000;
+}
+
+/* Profile Button */
+.navbar .btn-outline-dark {
+  background-color: transparent;
+  border: 1px solid #318CE7;
+  color: #318CE7;
+}
+
+.navbar .btn-outline-dark:hover {
+  background-color: #318CE7;
+  color: #000;
+}
+
+/* Logout Button */
+.navbar .btn-danger {
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+}
+
+.navbar .btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Profile Image in Navbar */
+.navbar .rounded-circle {
+  border: 2px solid #318CE7;
+}
+/* Enhanced App.css */
+/* General App Styling */
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000 0%, #080821 100%);
+}
+
+/* Confetti Canvas */
+.confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Enhanced Card Styling */
+.feature-card {
+  background: linear-gradient(145deg, #111111 0%, #0a0a1a 100%) !important;
+  border: none !important;
+  box-shadow: 0 8px 32px rgba(49, 140, 231, 0.2) !important;
+  border-radius: 15px !important;
+  overflow: hidden;
+  padding: 30px !important;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(49, 140, 231, 0.35) !important;
+}
+
+/* Card Content Styling */
+.card-body {
+  padding: 0 !important;
+}
+
+.card-body h2 {
+  text-align: left;
+  color: #ffffff;
+  font-family: "unbounded";
+  font-weight: 700;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.card-body h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #318CE7, #00cccc);
+  border-radius: 2px;
+}
+
+.card-body p {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: "unbounded";
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* Editor Styling */
+.editor-container {
+  font-family: 'Unbounded';
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  position: relative;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.editor-container textarea {
+  font-family: 'Unbounded';
+  background-color: #141428;
+  transition: all 0.3s ease;
+}
+
+textarea {
+  font-family: 'Unbounded';
+  width: 100%;
+  height: 250px;
+  background-color: #141428;
+  color: #f0f0f0;
+  border: 2px solid rgba(49, 140, 231, 0.5);
+  border-radius: 10px;
+  padding: 15px;
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 1.6;
+  resize: vertical;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border: 2px solid #318CE7;
+  box-shadow: 0 0 15px rgba(49, 140, 231, 0.3);
+}
+
+/* Feedback Styling */
+.feedback {
+  margin-top: 25px;
+  color: #318CE7;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 12px;
+  border-left: 4px solid #318CE7;
+  background-color: rgba(49, 140, 231, 0.1);
+  border-radius: 0 8px 8px 0;
+  line-height: 1.5;
+}
+
+/* Button Styling */
+.btn-primary {
+  background: linear-gradient(90deg, #318CE7 0%, #2c7dd1 100%);
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(49, 140, 231, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #00cccc 0%, #00b3b3 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 204, 204, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+/* Dialog Styling */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.dialog-card {
+  background: linear-gradient(145deg, #111111 0%, #0a0a1a 100%);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 15px 50px rgba(49, 140, 231, 0.4);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  border: 1px solid rgba(49, 140, 231, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.dialog-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #318CE7, #00cccc);
+}
+
+.dialog-card h2 {
+  margin-bottom: 20px;
+  color: #318CE7;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.dialog-card p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.dialog-card button {
+  margin: 8px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Loading Components */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.loading-container p {
+  margin-top: 20px;
+  color: #318CE7;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Progress Steps */
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.generating-text {
+  color: #318CE7;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.progress-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.step {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #222;
+  transition: all 0.5s ease;
+}
+
+.step.active {
+  background-color: #318CE7;
+  box-shadow: 0 0 15px rgba(49, 140, 231, 0.7);
+  transform: scale(1.2);
+}
+
+/* Floating Score Animation */
+.floating-score {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  font-weight: 800;
+  z-index: 2000;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+/* Success and Failure Animations */
+.success-animation {
+  animation: successPulse 3s ease;
+}
+
+.failure-animation {
+  animation: failurePulse 3s ease;
+}
+
+@keyframes successPulse {
+  0%, 100% { background: linear-gradient(135deg, #000000 0%, #080821 100%); }
+  30%, 70% { background: linear-gradient(135deg, #081e10 0%, #081e10 100%); }
+}
+
+@keyframes failurePulse {
+  0%, 100% { background: linear-gradient(135deg, #000000 0%, #080821 100%); }
+  30%, 70% { background: linear-gradient(135deg, #1e0808 0%, #1e0808 100%); }
+}
+
+/* Markdown Content Styling */
+.markdown-content {
+  font-family: 'Unbounded', sans-serif;
+  color: #f0f0f0;
+  line-height: 1.7;
+}
+
+.markdown-content h1, 
+.markdown-content h2, 
+.markdown-content h3 {
+  color: #318CE7;
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+  font-weight: 700;
+}
+
+.markdown-content ul, 
+.markdown-content ol {
+  padding-left: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.markdown-content li {
+  margin-bottom: 0.5em;
+}
+
+.markdown-content code:not([class*="language-"]) {
+  background-color: #1a1a2e;
+  color: #00cccc;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.markdown-content blockquote {
+  border-left: 4px solid #318CE7;
+  padding-left: 1em;
+  margin-left: 0;
+  font-style: italic;
+  color: #bfbfbf;
+}
+
+/* Responsive Adjustments */
+
+/* Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+  .feature-card {
+    padding: 20px !important;
+  }
+
+  .card-body h2 {
+    font-size: 1.5rem;
+  }
+
+  textarea {
+    height: 180px;
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  .dialog-card {
+    padding: 20px;
+  }
+
+  .dialog-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .floating-score {
+    font-size: 3.5rem;
+  }
+}
+
+/* Tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .feature-card {
+    padding: 25px !important;
+  }
+
+  textarea {
+    height: 220px;
+  }
+
+  .dialog-card {
+    max-width: 450px;
+  }
+}
+
+/* Animation classes for component transitions */
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+/* Glass effect on cards */
+.glass-card {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background: rgba(10, 10, 30, 0.25);
+  border: 1px solid rgba(49, 140, 231, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+/* Question Settings Container */
+.settings-container {
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.settings-container:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.settings-container h4 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.75rem;
+}
+
+/* Difficulty Dropdown Styling */
+.settings-container select.form-select {
+  border: 2px solid #000000;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.settings-container select.form-select:hover {
+  border-color: #adb5bd;
+}
+
+.settings-container select.form-select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(49, 140, 231, 0.25);
+  border-color: #318CE7;
+}
+
+/* Disable state for select */
+.settings-container select.form-select:disabled {
+  background-color: #e9ecef;
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+/* Topic Checkboxes Styling */
+.topic-checkboxes {
+  margin-top: 0.5rem;
+}
+
+.topic-checkboxes .form-check {
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.topic-checkboxes .form-check:hover {
+  background-color: #e9ecef;
+}
+
+/* Custom Checkbox Styling */
+.topic-checkboxes .form-check-input {
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  border: 2px solid #ced4da;
+  cursor: pointer;
+}
+
+.topic-checkboxes .form-check-input:checked {
+  background-color: #318CE7;
+  border-color: #318CE7;
+}
+
+.topic-checkboxes .form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(49, 140, 231, 0.25);
+  border-color: #318CE7;
+}
+
+/* Disable state for checkboxes */
+.topic-checkboxes .form-check-input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #e9ecef;
+}
+
+.topic-checkboxes .form-check-input:disabled + .form-check-label {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.topic-checkboxes .form-check-label {
+  padding-left: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Error message for topic selection */
+.text-danger {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  color: #dc3545;
+}
+
+/* Generate button styling */
+.btn-primary {
+  background-color: #318CE7;
+  border-color: #318CE7;
+  padding: 10px 24px;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #2674c9;
+  border-color: #2674c9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:disabled {
+  background-color: #8ebcef;
+  border-color: #8ebcef;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.text-muted p {
+  font-style: italic;
+  color: #ffffff;
+}
+.text-muted small {
+  font-style: italic;
+  color: #ffffff;
+}
