@@ -6,13 +6,13 @@ import { getFirestore, doc, setDoc, getDoc } from "firebase/firestore";
 
 // Your Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyD8PiW50cJd5JNo1CUcZRrDEWppScklMLM",
-  authDomain: "pseudocode-f5931.firebaseapp.com",
-  projectId: "pseudocode-f5931",
-  storageBucket: "pseudocode-f5931.appspot.com",
-  messagingSenderId: "159019404835",
-  appId: "1:159019404835:web:65fe5f4b89771925e82b96",
-  measurementId: "G-GWZ9NXRF6D"
+  apiKey: "AIzaSyBeSoHZ5PoXHnGbj23CT9sZTlDYCdWoBw4",
+  authDomain: "spartans-5e08a.firebaseapp.com",
+  projectId: "spartans-5e08a",
+  storageBucket: "spartans-5e08a.firebasestorage.app",
+  messagingSenderId: "985899427886",
+  appId: "1:985899427886:web:75f2b22dcf9ee6822157bf",
+  measurementId: "G-RC5D8LCTHF"
 };
 
 // Initialize Firebase
